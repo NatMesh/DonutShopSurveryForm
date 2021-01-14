@@ -1,0 +1,50 @@
+body {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.8)
+    ),
+    url("https://makeandtell.com/wp-content/uploads/2016/06/deckyourdesktop_june2016_widescreen.jpg");
+  background-size: cover;
+  background-position: center;
+
+  font-family: "Titillium Web", sans-serif;
+}
+
+p {
+  color: black;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 40%;
+  grid-gap: 20px;
+  grid-template-areas:
+    "header"
+    "form";
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.header {
+  grid-area: header;
+  border: 1px solid black;
+}
+
+.content {
+  grid-area: form;
+  border: 1px solid black;
+}
+
+#title {
+  color: #fff;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  text-align: center;
+}
+
+#description {
+  color: black;
+  font-size: 18px;
+  text-align: center;
+}
