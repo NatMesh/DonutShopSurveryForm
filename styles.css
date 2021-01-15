@@ -7,11 +7,15 @@ body {
   background-size: cover;
   background-position: center;
 
-  font-family: "Titillium Web", sans-serif;
+  font-family: sans-serif;
 }
 
 p {
-  color: black;
+  font-weight: bold;
+}
+
+label {
+  font-weight: bold;
 }
 
 .grid-container {
@@ -28,23 +32,94 @@ p {
 
 .header {
   grid-area: header;
-  border: 1px solid black;
+  /*   border: 1px solid black; */
 }
 
 .content {
   grid-area: form;
   border: 1px solid black;
+  padding: 20px;
 }
 
 #title {
-  color: #fff;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-    1px 1px 0 #000;
+  font-weight: bold;
   text-align: center;
+  margin-top: 0px;
+  margin-bottom: 5px;
 }
 
 #description {
-  color: black;
-  font-size: 18px;
   text-align: center;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#survey-form {
+  display: grid;
+  grid-row-gap: 10px;
+}
+
+#name-label {
+  font-weight: bold;
+}
+
+#name {
+}
+
+#email-label {
+  font-weight: bold;
+}
+
+#email {
+}
+
+#number-label {
+  font-weight: bold;
+}
+
+#number {
+}
+
+#dropdown-label {
+  font-weight: bold;
+}
+
+#dropdown {
+}
+
+#radio-button-label {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+#definitely-radio-button {
+  margin-left: 0px;
+}
+
+#no-radio-button {
+  margin-left: 0px;
+}
+
+#checkbox-label {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+#key-lime-pie {
+  margin-left: 0px;
+}
+
+#caramel-dutch-apple-pie {
+  margin-left: 0px;
+}
+
+#red-velvet {
+  margin-left: 0px;
+}
+
+#comments-label {
+  margin-top: 0px;
+  margin-bottom: 0px;
 }

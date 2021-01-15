@@ -1,27 +1,70 @@
-<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Survey page</title>
-  </head>
-  <body>
-    <main class="grid-container">
-      <section class="header">
-        <h1 id="title">Nat's Donuts Survery Form</h1>
-        <p id="description">Thank you very much for providing your feedback!</p>
-      </section>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css"/>
+<title>Survey page</title>
+</head>
+<body>
+  <main class="grid-container">
 
-      <section class="content">
-        <p>fjhdk</p>
-      </section>
-    </main>
-  </body>
+    <section class="header">
+      <h1 id="title">Nat's Donuts Survery Form</h1>
+      <p id="description">Thank you very much for providing your feedback!</p>
+    </section>
+
+    <section class="content">
+      <form id="survey-form">
+
+        <label for="name" id="name-label">Name</label>
+        <input id="name" type="text" required placeholder="Enter your name">
+
+        <label for="email" id="email-label">Email</label>
+        <input id="email" type="email" required placeholder="Enter your email">
+
+        <label for="number" id="number-label">Age (optional)</label>
+        <input id="number" type="number" placeholder="Age" min="5" max="122">
+
+        <label id="dropdown-label" for="dropdown">What is your favourite donut from our "Famous Five"?</label>
+        <select name="donuts" id="dropdown">
+          <option value="">Select a donut</option>
+          <option value="Glazed">Glazed</option>
+          <option value="Oreo Ring">Oreo Ring</option>
+          <option value="The Graham Slam">The Graham Slam</option>
+          <option value="Imperial Cookie">Imperial Cookie</option>
+          <option value="Ube">Ube</option>
+        </select>
+
+<!--     Radio button section     -->
+        <p id="radio-button-label">Would you recommend Nat's Donuts to a friend?</p>
+   <!--    First radio button     -->
+        <label>
+          <input id="definitely-radio-button" type="radio" name="recommendation" value="definitely">Definitely
+        </label>
+<!--    Second radio button     -->
+        <label>
+          <input id="no-radio-button" type="radio" name="recommendation" value="no">No
+        </label>
+
+<!--     Checkbox options     -->
+        <p id="checkbox-label">Which feature donuts from 2020 would you like to be made a permanent menu item?</p>
+        <!--     checkbox option 1     -->
+        <label for="key-lime-pie"><input id="caramel-dutch-apple-pie" type="checkbox" name="new-donut" value="Key Lime Pie">Key Lime Pie</label>
+        <!--     checkbox option 2     -->
+        <label for="caramel-dutch-apple-pie"><input id="caramel-dutch-apple-pie" type="checkbox" name="new-donut" value="Caramel Dutch Apple Pie">Caramel Dutch Apple Pie</label>
+        <!--     checkbox option 3     -->
+        <label for="red-velvet"><input id="red-velvet" type="checkbox" name="new-donut" value="Red Velvet">Red Velvet</label>
+
+        <!--     Textarea     -->
+        <p id="comments-label">Any comments or suggestions?</p>
+        <textarea></textarea>
+
+        <!--     submit button     -->
+        <button id="submit">Submit</button
+
+      </form>
+    </section>
+  </main>
+</body>
 </html>
